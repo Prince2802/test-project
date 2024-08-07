@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <!-- Form field for name -->
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" />
+  </div>
+
+  <!-- Form field for email -->
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" />
+  </div>
+
+  <!-- Display error message if form is invalid -->
+  <div *ngIf="error">{{ error }}</div>
+
+  <!-- Submit button that changes text based on editing state -->
+  <button type="submit">{{ isEditing ? "Update" : "Add" }}</button>
+</form>

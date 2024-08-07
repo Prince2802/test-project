@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Form (Angular)</h1>
+  <app-form
+    [currentData]="currentData"
+    [isEditing]="isEditing"
+    (addData)="addData($event)"
+    (updateData)="updateData($event)"
+  ></app-form>
+  <app-table
+    [data]="data"
+    (deleteData)="deleteData($event)"
+    (editData)="editData($event)"
+  ></app-table>
+</div>
