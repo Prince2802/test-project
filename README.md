@@ -22,5 +22,5 @@ npm i prop-types
 To create project in angular :
 ng new form-app
 
-Both the apps looks similar in functionality and UI
+Both the apps works and looks similar in functionality and UI
 ![form_png](https://github.com/user-attachments/assets/85054297-a801-4239-aade-5d2400542714)
